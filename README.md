@@ -1,5 +1,3 @@
-# PhishScanQR: Mobile Detection RRCode Phishing using Virustotal and Machine-Learning
-
 📱 Mobile QR Code Threat Detection using VirusTotal & Machine Learning
 
 This project presents a mobile-based security solution designed to detect malicious QR codes (quishing attacks) by integrating VirusTotal API and Machine Learning techniques. The system aims to protect users from phishing and malware threats embedded within QR codes commonly found in emails, advertisements, and public spaces.
