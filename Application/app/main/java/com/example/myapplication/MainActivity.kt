@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     // VirusTotal
     private val vtApiKey =
-        "f51fa69f314026f822f3cc9ad63cbcb049ebd2116ae2290a28aa3620139fafa6"
+        "--VIRUSTOTAL API KEY"
     private val vtPollDelayMs = 1200L
     private val vtMaxPolls = 8
 
