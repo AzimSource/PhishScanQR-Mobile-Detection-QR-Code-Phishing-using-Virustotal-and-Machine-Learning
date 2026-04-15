@@ -57,7 +57,7 @@ def is_random_domain(domain, threshold=4.0):
 
 def get_page_rank(domain):
     try:
-        api_key = os.environ.get("OPR_API_KEY", "k08ccswsocoow0ggw8g4sssccoocgs80k0s8sos4")
+        api_key = os.environ.get("OPR_API_KEY", "--API KEY--")
         if not api_key:
             return 0
         url = f"https://openpagerank.com/api/v1.0/getPageRank?domains[]={domain}"
