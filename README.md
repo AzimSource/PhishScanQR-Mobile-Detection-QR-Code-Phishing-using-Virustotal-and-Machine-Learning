@@ -12,6 +12,7 @@ Real-time QR code scanning
 URL reputation analysis via VirusTotal
 Machine learning-based classification for enhanced threat detection
 🔍 Key Features
+
 📷 QR Code Scanner
 Scan QR codes using the mobile device camera or import images from the gallery.
 🌐 URL Extraction
