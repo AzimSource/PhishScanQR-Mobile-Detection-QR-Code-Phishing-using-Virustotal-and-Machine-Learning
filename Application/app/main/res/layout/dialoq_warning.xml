@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_marginTop="300dp"
+    android:background="@drawable/bg_warning">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_warning"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/txtWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠️ This link is unsafe!"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/black"/>
+</LinearLayout>

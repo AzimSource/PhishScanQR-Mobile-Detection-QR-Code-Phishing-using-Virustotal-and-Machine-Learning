@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Camera Preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Scanner Frame + Line Container -->
+    <FrameLayout
+        android:id="@+id/scannerContainer"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center">
+
+        <!-- Scanner Frame Overlay -->
+        <ImageView
+            android:id="@+id/scannerOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/scanner_frame"
+            android:scaleType="fitXY" />
+
+        <!-- Scanner Line Positioned at Top -->
+        <View
+            android:id="@+id/scannerLine"
+            android:layout_width="260dp"
+            android:layout_height="2dp"
+            android:layout_gravity="top|center_horizontal"
+            android:background="#FF0000" />
+    </FrameLayout>
+
+    <!-- Top Text -->
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="140dp"
+        android:text="Find a QR code"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <!-- Bottom Controls -->
+    <LinearLayout
+        android:id="@+id/bottomControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="120dp"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/btnFlash"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_bg"
+            android:src="@drawable/flash"
+            android:onClick="onFlashlightClick"
+            android:contentDescription="Flashlight" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/btnGallery"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/rounded_bg"
+            android:src="@drawable/gallery"
+            android:onClick="onGalleryClick"
+            android:contentDescription="Open Gallery" />
+    </LinearLayout>
+
+</FrameLayout>
