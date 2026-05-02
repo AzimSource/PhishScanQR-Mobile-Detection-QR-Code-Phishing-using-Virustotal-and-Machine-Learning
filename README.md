@@ -1,65 +1,101 @@
-📱 Mobile QR Code Threat Detection using VirusTotal & Machine Learning
+# 📱 Mobile QR Code Threat Detection using VirusTotal & Machine Learning
 
-This project presents a mobile-based security solution designed to detect malicious QR codes (quishing attacks) by integrating VirusTotal API and Machine Learning techniques. The system aims to protect users from phishing and malware threats embedded within QR codes commonly found in emails, advertisements, and public spaces.
+## 🚀 Project Overview
 
-🚀 Project Overview
+This project presents a **mobile security application** designed to detect malicious QR codes (commonly known as *quishing attacks*) by combining **threat intelligence** from VirusTotal with **machine learning-based URL classification**.
 
-QR codes are widely used for quick access to websites and services. However, attackers increasingly exploit them to redirect users to malicious URLs. This project provides a proactive detection mechanism by scanning QR codes and analyzing their embedded links for potential threats.
+As QR codes become widely adopted in payments, marketing, and public services, attackers increasingly exploit them to redirect users to phishing websites or malware. This application provides a **proactive defense mechanism** by scanning QR codes and analyzing their embedded URLs in real time before users interact with them.
 
-The application combines:
+---
 
-Real-time QR code scanning
-URL reputation analysis via VirusTotal
-Machine learning-based classification for enhanced threat detection
+## 🔍 Key Features
 
-🔍 Key Features
+### 📷 QR Code Scanning
 
-📷 QR Code Scanner
-Scan QR codes using the mobile device camera or import images from the gallery.
+* Scan QR codes using the device camera
+* Import QR images from gallery
 
-🌐 URL Extraction
-Automatically extracts URLs embedded within scanned QR codes.
+### 🌐 URL Extraction
 
-🛡️ VirusTotal Integration
-Checks URLs against multiple antivirus engines using the VirusTotal API.
+* Automatically extracts embedded URLs from scanned QR codes
+* Supports detection of hidden or obfuscated links
 
-🤖 Machine Learning Detection
-Uses a trained ML model to classify URLs as safe or malicious based on features such as:
-- URL length
-- Domain characteristics
-- Presence of suspicious patterns
+### 🛡️ Threat Intelligence Integration
 
-⚡ Real-Time Analysis
-Provides instant feedback to users on whether a QR code is safe to access.
+* Queries URLs against multiple security engines via VirusTotal
+* Identifies known malicious or suspicious domains
 
-📊 Result Visualization
-Displays analysis results clearly, including risk level and detection details.
+### 🤖 Machine Learning Detection
 
-🧠 Technologies Used
-1. Android (Java/Kotlin)
-2. ML Kit / ZXing (QR code scanning)
-3. Python (for ML model training)
-4.VirusTotal API
+* Enhances detection using a trained ML model
+* Classifies URLs as **safe or malicious** based on features such as:
 
-🏗️ System Architecture
-1. User scans a QR code.
-2. The system extracts the embedded URL.
-3. The URL is sent to:
-- VirusTotal API for reputation analysis
-- Machine Learning model for prediction
-4. Results are combined and displayed to the user.
+  * URL length and structure
+  * Domain entropy and characteristics
+  * Suspicious keywords and patterns
 
-🎯 Objectives
-1. Detect and prevent QR code phishing (quishing) attacks
-2. Enhance mobile security awareness
-3. Provide a lightweight and efficient threat detection tool
+### ⚡ Real-Time Analysis
 
-📌 Future Improvements
-- Offline ML model optimization
-- Integration with email filtering systems
-- Advanced threat intelligence integration
-- UI/UX enhancements
+* Combines ML predictions and threat intelligence
+* Provides **instant risk assessment** before user interaction
 
-⚠️ Disclaimer
+### 📊 Result Visualization
 
-This project is developed for educational and research purposes. While it improves QR code security, it should not be considered a complete replacement for enterprise-level security solutions.
+* Displays clear results including:
+
+  * Risk level (Safe / Suspicious / Malicious)
+  * Detection sources
+  * Supporting analysis details
+
+---
+
+## 🧠 Technologies Used
+
+* **Android (Java/Kotlin)** – Mobile application development
+* **ML Kit / ZXing** – QR code scanning
+* **Python** – Machine learning model training
+* **VirusTotal API** – Threat intelligence integration
+
+---
+
+## 🏗️ System Architecture
+
+1. User scans a QR code via the mobile application
+2. The system extracts the embedded URL
+3. The URL is analyzed through:
+
+   * Threat intelligence (VirusTotal API)
+   * Machine learning classification model
+4. Results are aggregated and presented to the user in real time
+
+---
+
+## 🎯 Objectives
+
+* Detect and prevent QR code-based phishing (quishing) attacks
+* Improve user awareness of mobile security threats
+* Provide a lightweight, fast, and accessible security tool
+
+---
+
+## 📈 Key Value
+
+* Adds a **layer of protection** before users access potentially harmful links
+* Reduces reliance on a single detection method by combining **AI + threat intelligence**
+* Demonstrates practical application of **mobile security + machine learning + API integration**
+
+---
+
+## 🔮 Future Improvements
+
+* Optimize ML model for **offline detection**
+* Integrate with **email and messaging platforms**
+* Expand threat intelligence sources beyond VirusTotal
+* Improve UI/UX for better user experience
+* Add **real-time alerting and logging system**
+
+---
+
+## ⚠️ Disclaimer
+
+This project is developed for **educational and research purposes only**. While it enhances QR code security, it is not intended to replace enterprise-grade security solutions.
